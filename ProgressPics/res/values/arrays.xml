@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav">
+           <item>Today</item>
+          <item>Previous</item>
+          <item>Charts</item>
+          <item>Progress</item>
+          <item>Preferences</item>
+    </string-array>
+     <string-array name="campick">
+        <item >Standard</item>
+        <item >Front Facing Camera</item>
+    </string-array>
+</resources>
