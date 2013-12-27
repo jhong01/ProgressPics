@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+        android:background="#e5e5e5"
+        
+        >
+        
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/focusLayout">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"/>
+     
+    <LinearLayout
+       
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_gravity="center"
+    android:background="@drawable/card"
+    >
+        
+  
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/detailimage"
+        />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/comments" />
+        
+    </LinearLayout>
+
+	
+    <Button
+        android:id="@+id/toMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" 
+        />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

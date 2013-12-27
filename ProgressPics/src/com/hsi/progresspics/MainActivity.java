@@ -3,7 +3,6 @@ package com.hsi.progresspics;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
-import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
@@ -13,22 +12,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.hsi.progresspics.CameraFrag.FlipView;
 import com.hsi.progresspics.TodayFragment.FragmentSwitcher;
 
-public class MainActivity extends FragmentActivity implements FragmentSwitcher,
-		CameraFrag.Contract, FlipView {
+public class MainActivity extends FragmentActivity implements FragmentSwitcher {
 	private String[] navtitles;
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
-	private static final String STATE_SELECTED_NAVIGATION_ITEM = "selected_navigation_item";
-	private static final String STATE_SINGLE_SHOT = "single_shot";
-	private static final int CONTENT_REQUEST = 1337;
-	private CameraFrag std = null;
-	private CameraFrag ffc = null;
-	private CameraFrag current = null;
-	private boolean hasTwoCameras = (Camera.getNumberOfCameras() > 1);
-	private boolean singleShot = false;
+	static final int REQUEST_IMAGE_CAPTURE = 2;
+	CardInfo cardInfo;
+
 	boolean flip = false;
 
 	@Override
@@ -112,55 +104,13 @@ public class MainActivity extends FragmentActivity implements FragmentSwitcher,
 
 	@Override
 	public void switchFragment() {
-		// TODO Auto-generated method stub
-		if (hasTwoCameras) {
-
-			current = CameraFrag.newInstance(false);
-			std = current;
-			getFragmentManager().beginTransaction()
-					.replace(R.id.content_frame, current).commit();
-			CameraFrag.flip = true;
-		}
-
-		else {
-			current = CameraFrag.newInstance(false);
-
-			getFragmentManager().beginTransaction()
-					.replace(R.id.content_frame, current).commit();
-		}
 
 	}
 
 	@Override
-	public boolean isSingleShotMode() {
+	public void setCardInfo(CardInfo info) {
 		// TODO Auto-generated method stub
-		return (singleShot);
+		cardInfo = info;
 	}
 
-	@Override
-	public void setSingleShotMode(boolean mode) {
-		// TODO Auto-generated method stub
-		singleShot = mode;
-
-	}
-
-	@Override
-	public void flip() {
-		// TODO Auto-generated method stub
-
-		if (std == null) {
-			std = CameraFrag.newInstance(false);
-			current = std;
-			ffc = null;
-		}
-
-		else if (ffc == null) {
-			ffc = CameraFrag.newInstance(true);
-			current = ffc;
-			std = null;
-		}
-
-		getFragmentManager().beginTransaction()
-				.replace(R.id.content_frame, current).commit();
-	}
 }

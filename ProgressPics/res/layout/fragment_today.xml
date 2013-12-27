@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:card="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#e5e5e5"
+    >
 
     <ImageButton
         android:id="@+id/cameraButton"
@@ -12,12 +15,13 @@
         android:scaleType="centerCrop"
         android:src="@drawable/talkshit"
        />
-    <FrameLayout
-        android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:id="@+id/testframe">
-        
-	
-	</FrameLayout>
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/card"
+        android:visibility="gone" />
 	    
 </LinearLayout>
