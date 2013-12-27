@@ -38,6 +38,9 @@ public class MainActivity extends FragmentActivity implements FragmentSwitcher {
 		// Set the list's click listener
 		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 		Fragment fragment = new TodayFragment();
+		Intent toToday = getIntent();
+		Bundle tempBundle = toToday.getBundleExtra("PictureActivityBundle");
+		fragment.setArguments(tempBundle);
 		FragmentManager fragmentManager = getFragmentManager();
 		fragmentManager.beginTransaction()
 				.replace(R.id.content_frame, fragment).commit();

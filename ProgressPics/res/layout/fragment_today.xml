@@ -23,5 +23,8 @@
         android:layout_gravity="center"
         android:background="@drawable/card"
         android:visibility="gone" />
-	    
+	 <TextView
+	     android:id="@+id/commentText"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"/>
 </LinearLayout>

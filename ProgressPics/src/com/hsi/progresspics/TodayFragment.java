@@ -20,8 +20,10 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-public class TodayFragment extends Fragment {
+public class TodayFragment extends Fragment implements
+		DatabaseHelper.NoteListener {
 	private ImageButton image;
 	private ImageView todayPicture;
 	private static final int REQUEST_CODE = 1;
@@ -30,6 +32,8 @@ public class TodayFragment extends Fragment {
 	static final int REQUEST_IMAGE_CAPTURE = 2;
 	private ImageView mImageView;
 	private String filename;
+	private TextView commentText;
+	private int position = 1;
 	// ImageView cardimage;
 	Context mContext;
 	CardInfo cardInfo;
@@ -58,6 +62,8 @@ public class TodayFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.fragment_today, container,
 				false);
 		image = (ImageButton) rootView.findViewById(R.id.cameraButton);
+		commentText = (TextView) rootView.findViewById(R.id.commentText);
+		DatabaseHelper.getInstance(getActivity()).getNoteAsync(position, this);
 		/*
 		 * todayPicture = new ImageView(getActivity());
 		 * 
@@ -73,6 +79,7 @@ public class TodayFragment extends Fragment {
 		 * frame.addView(todayPicture, 0, params);
 		 */
 		todayPicture = (ImageView) rootView.findViewById(R.id.bigimage);
+
 		image.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -168,6 +175,12 @@ public class TodayFragment extends Fragment {
 		mediaFile = new File(filename);
 
 		return mediaFile;
+	}
+
+	@Override
+	public void setNote(String note) {
+		// TODO Auto-generated method stub
+		commentText.setText(note);
 	}
 
 }

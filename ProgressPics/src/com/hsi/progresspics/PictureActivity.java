@@ -12,6 +12,8 @@ import android.graphics.Matrix;
 import android.graphics.RectF;
 import android.media.ExifInterface;
 import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.TypedValue;
@@ -28,7 +30,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class PictureActivity extends Activity {
+public class PictureActivity extends Activity implements
+		DatabaseHelper.NoteListener {
 	private String filename;
 	private ImageView mImageView;
 	private EditText weight;
@@ -41,6 +44,7 @@ public class PictureActivity extends Activity {
 	String weightString;
 	String commentString;
 	ScrollView focusLayout;
+	int position = 1;
 
 	/*
 	 * (non-Javadoc)
@@ -67,7 +71,11 @@ public class PictureActivity extends Activity {
 				Intent mainIntent = new Intent(PictureActivity.this,
 						MainActivity.class);
 				Bundle info = new Bundle();
-
+				info.putBoolean("has image", true);
+				mainIntent.putExtra("PictureActivityBundle", info);
+				DatabaseHelper.getInstance(PictureActivity.this).saveNoteAsync(
+						position, comments.getText().toString());
+				startActivity(mainIntent);
 			}
 
 		});
@@ -218,4 +226,28 @@ public class PictureActivity extends Activity {
 		}
 		return rotate;
 	}
+
+	static public <T> void executeAsyncTask(AsyncTask<T, ?, ?> task,
+			T... params) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, params);
+		} else {
+			task.execute(params);
+		}
+	}
+
+	@Override
+	public void setNote(String note) {
+		// TODO Auto-generated method stub
+		comments.setText(note);
+	}
+
+	@Override
+	public void onPause() {
+		// int position=getArguments().getInt(KEY_POSITION, -1);
+		DatabaseHelper.getInstance(this).saveNoteAsync(position,
+				comments.getText().toString());
+		super.onPause();
+	}
+
 }

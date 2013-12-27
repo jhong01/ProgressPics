@@ -50,11 +50,11 @@
         android:id="@+id/comments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/comments" />
+        android:hint="@string/comments" 
+        android:inputType="textMultiLine"/>
         
     </LinearLayout>
 
-	
     <Button
         android:id="@+id/toMain"
         android:layout_width="wrap_content"

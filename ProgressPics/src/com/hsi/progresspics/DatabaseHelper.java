@@ -1,8 +1,10 @@
 package com.hsi.progresspics;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.AsyncTask;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String DATABASE_NAME = "progresspics.db";
@@ -22,11 +24,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		this.ctxt = ctxt;
 	}
 
+	interface NoteListener {
+		void setNote(String note);
+	}
+
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		try {
 			db.beginTransaction();
-			db.execSQL("CREATE TABLE notes (position INTEGER PRIMARY KEY, prose TEXT);");
+			db.execSQL("CREATE TABLE cards (position INTEGER PRIMARY KEY, prose TEXT);");
 			db.setTransactionSuccessful();
 		} finally {
 
@@ -37,5 +43,75 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		throw new RuntimeException(ctxt.getString(R.string.on_upgrade_error));
+	}
+
+	void getNoteAsync(int position, NoteListener listener) {
+		PictureActivity.executeAsyncTask(new GetNoteTask(listener), position);
+	}
+
+	void saveNoteAsync(int position, String note) {
+		PictureActivity.executeAsyncTask(new SaveNoteTask(position, note));
+	}
+
+	void deleteNoteAsync(int position) {
+		PictureActivity.executeAsyncTask(new DeleteNoteTask(), position);
+	}
+
+	private class GetNoteTask extends AsyncTask<Integer, Void, String> {
+		private NoteListener listener = null;
+
+		GetNoteTask(NoteListener listener) {
+			this.listener = listener;
+		}
+
+		@Override
+		protected String doInBackground(Integer... params) {
+			String[] args = { params[0].toString() };
+			Cursor c = getReadableDatabase().rawQuery(
+					"SELECT prose FROM cards WHERE position=?", args);
+			c.moveToLast();
+			// c.moveToFirst();
+			if (c.isAfterLast()) {
+				return (null);
+			}
+			String result = c.getString(0);
+			c.close();
+			return (result);
+		}
+
+		@Override
+		public void onPostExecute(String prose) {
+			listener.setNote(prose);
+		}
+	}
+
+	private class SaveNoteTask extends AsyncTask<Void, Void, Void> {
+		private int position;
+		private String note = null;
+
+		SaveNoteTask(int position, String note) {
+			this.position = position;
+			this.note = note;
+		}
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			String[] args = { String.valueOf(position), note };
+			getWritableDatabase()
+					.execSQL(
+							"INSERT OR REPLACE INTO notes (position, prose) VALUES (?, ?)",
+							args);
+			return (null);
+		}
+	}
+
+	private class DeleteNoteTask extends AsyncTask<Integer, Void, Void> {
+		@Override
+		protected Void doInBackground(Integer... params) {
+			String[] args = { params[0].toString() };
+			getWritableDatabase().execSQL("DELETE FROM notes WHERE position=?",
+					args);
+			return (null);
+		}
 	}
 }

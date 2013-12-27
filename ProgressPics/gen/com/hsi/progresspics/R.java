@@ -43,20 +43,21 @@ public final class R {
         public static final int talkshit=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0010;
-        public static final int autofocus=0x7f0a000d;
+        public static final int action_settings=0x7f0a0011;
+        public static final int autofocus=0x7f0a000e;
         public static final int bigimage=0x7f0a0009;
         public static final int camera=0x7f0a0006;
         public static final int cameraButton=0x7f0a0008;
+        public static final int commentText=0x7f0a000a;
         public static final int comments=0x7f0a0004;
-        public static final int content_frame=0x7f0a000b;
+        public static final int content_frame=0x7f0a000c;
         public static final int date=0x7f0a0001;
         public static final int detailimage=0x7f0a0002;
-        public static final int drawer_layout=0x7f0a000a;
-        public static final int flipCameraAction=0x7f0a000f;
+        public static final int drawer_layout=0x7f0a000b;
+        public static final int flipCameraAction=0x7f0a0010;
         public static final int focusLayout=0x7f0a0000;
-        public static final int left_drawer=0x7f0a000c;
-        public static final int single_shot=0x7f0a000e;
+        public static final int left_drawer=0x7f0a000d;
+        public static final int single_shot=0x7f0a000f;
         public static final int toMain=0x7f0a0005;
         public static final int weight=0x7f0a0003;
         public static final int zoom=0x7f0a0007;
