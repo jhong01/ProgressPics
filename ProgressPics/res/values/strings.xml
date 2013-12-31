@@ -9,7 +9,9 @@
     <string name="auto_focus">Auto Focus</string>
     <string name="single_shot_mode">Single Shot</string>
     <string name="title_activity_display">DisplayActivity</string>
-	<string name="weight">Enter your weight: </string>
-	<string name="comments">Comments: </string>
-	<string name="on_upgrade_error">Upgrade Error </string>
+    <string name="weight">Enter your weight: </string>
+    <string name="comments">Comments: </string>
+    <string name="on_upgrade_error">Upgrade Error </string>
+    <string name="title_activity_image">ImageActivity</string>
+
 </resources>

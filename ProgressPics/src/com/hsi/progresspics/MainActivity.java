@@ -53,7 +53,7 @@ public class MainActivity extends FragmentActivity implements FragmentSwitcher {
 		@Override
 		public void onItemClick(AdapterView parent, View view, int position,
 				long id) {
-			// selectItem(position);
+			selectItem(position);
 		}
 	}
 
@@ -67,22 +67,23 @@ public class MainActivity extends FragmentActivity implements FragmentSwitcher {
 	private void selectItem(int position) {
 		// Create a new fragment and specify the planet to show based on
 		// position
-		Fragment fragment;
+		Fragment fragment = null;
 		Intent intent;
 		Bundle args = new Bundle();
 		switch (position) {
 		case 0:
 			fragment = new TodayFragment();
+			break;
 		case 1:
-			// fragment = new PreviousFragment();
+			fragment = new ImageFragment();
+			break;
 		case 2:
 			// fragment = new ChartsFragment();
 		case 3:
 			// fragment = new WatchProgressFragment();
 		case 4:
 			// fragment = new PreferencesFragment();
-		default:
-			fragment = new TodayFragment();
+
 		}
 
 		// args.putInt(TodayFragment.ARG_PLANET_NUMBER, position);

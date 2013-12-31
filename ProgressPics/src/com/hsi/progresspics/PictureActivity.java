@@ -1,6 +1,10 @@
 package com.hsi.progresspics;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import android.app.Activity;
 import android.content.Context;
@@ -30,14 +34,15 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class PictureActivity extends Activity implements
-		DatabaseHelper.NoteListener {
+public class PictureActivity extends Activity {
 	private String filename;
 	private ImageView mImageView;
 	private EditText weight;
 	private EditText comments;
 	private TextView datestring;
 	private Button toMain;
+	private String date;
+	String formattedDate = "";
 	Bitmap bitmap;
 	CardInfo cardInfo;
 	File output;
@@ -63,6 +68,13 @@ public class PictureActivity extends Activity implements
 		comments = (EditText) findViewById(R.id.comments);
 		datestring = (TextView) findViewById(R.id.date);
 		toMain = (Button) findViewById(R.id.toMain);
+
+		Calendar c = Calendar.getInstance();
+		System.out.println("Current time => " + c.getTime());
+
+		SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+		formattedDate = df.format(c.getTime());
+
 		toMain.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -73,8 +85,14 @@ public class PictureActivity extends Activity implements
 				Bundle info = new Bundle();
 				info.putBoolean("has image", true);
 				mainIntent.putExtra("PictureActivityBundle", info);
+				/*
+				 * DatabaseHelper.getInstance(PictureActivity.this).saveNoteAsync
+				 * ( position, filename, weight.getText().toString(),
+				 * comments.getText().toString());
+				 */
 				DatabaseHelper.getInstance(PictureActivity.this).saveNoteAsync(
-						position, comments.getText().toString());
+						filename, weight.getText().toString(),
+						comments.getText().toString(), formattedDate);
 				startActivity(mainIntent);
 			}
 
@@ -83,13 +101,18 @@ public class PictureActivity extends Activity implements
 		Bundle bundle = intent.getBundleExtra("bundle");
 		filename = bundle.getString("filename");
 		setBitmap();
+		try {
+			overRideBitmap(bitmap);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		mImageView.setImageBitmap(ImageHelper.getRoundCornerBitmap(bitmap, 10));
 		cardInfo = new CardInfo();
-		output = new File(filename);
-		if (output.exists()) {
-			output.delete(); // DELETE existing file
-			output = new File(filename);
-		}
+		/*
+		 * output = new File(filename); if (output.exists()) { output.delete();
+		 * // DELETE existing file output = new File(filename); }
+		 */
 		weight.setOnFocusChangeListener(new OnFocusChangeListener() {
 			public void onFocusChange(View v, boolean hasFocus) {
 				weightString = weight.getText().toString();
@@ -121,6 +144,21 @@ public class PictureActivity extends Activity implements
 		int ht = Math.round(ht_px);
 		int wt = Math.round(wt_px);
 		this.bitmap = scaleCenterCrop(bitmap, ht, wt);
+		/*
+		 * try { overRideBitmap(this.bitmap); } catch (IOException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
+
+	}
+
+	private void overRideBitmap(Bitmap bitmap) throws IOException {
+
+		File file = new File(filename);
+		FileOutputStream fOut = new FileOutputStream(file);
+
+		bitmap.compress(Bitmap.CompressFormat.JPEG, 85, fOut);
+		fOut.flush();
+		fOut.close();
 	}
 
 	public Bitmap scaleCenterCrop(Bitmap source, int newHeight, int newWidth) {
@@ -234,20 +272,6 @@ public class PictureActivity extends Activity implements
 		} else {
 			task.execute(params);
 		}
-	}
-
-	@Override
-	public void setNote(String note) {
-		// TODO Auto-generated method stub
-		comments.setText(note);
-	}
-
-	@Override
-	public void onPause() {
-		// int position=getArguments().getInt(KEY_POSITION, -1);
-		DatabaseHelper.getInstance(this).saveNoteAsync(position,
-				comments.getText().toString());
-		super.onPause();
 	}
 
 }

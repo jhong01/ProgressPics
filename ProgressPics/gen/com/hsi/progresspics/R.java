@@ -43,43 +43,56 @@ public final class R {
         public static final int talkshit=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0011;
-        public static final int autofocus=0x7f0a000e;
-        public static final int bigimage=0x7f0a0009;
-        public static final int camera=0x7f0a0006;
-        public static final int cameraButton=0x7f0a0008;
-        public static final int commentText=0x7f0a000a;
-        public static final int comments=0x7f0a0004;
-        public static final int content_frame=0x7f0a000c;
-        public static final int date=0x7f0a0001;
-        public static final int detailimage=0x7f0a0002;
-        public static final int drawer_layout=0x7f0a000b;
-        public static final int flipCameraAction=0x7f0a0010;
-        public static final int focusLayout=0x7f0a0000;
-        public static final int left_drawer=0x7f0a000d;
-        public static final int single_shot=0x7f0a000f;
-        public static final int toMain=0x7f0a0005;
-        public static final int weight=0x7f0a0003;
-        public static final int zoom=0x7f0a0007;
+        public static final int action_settings=0x7f0a001c;
+        public static final int autofocus=0x7f0a0019;
+        public static final int camera=0x7f0a0007;
+        public static final int cameraButton=0x7f0a0009;
+        public static final int comments=0x7f0a0005;
+        public static final int comments1=0x7f0a000c;
+        public static final int comments2=0x7f0a000f;
+        public static final int comments3=0x7f0a0012;
+        public static final int comments4=0x7f0a0015;
+        public static final int content_frame=0x7f0a0017;
+        public static final int date=0x7f0a0002;
+        public static final int detailimage=0x7f0a0003;
+        public static final int detailimage1=0x7f0a000a;
+        public static final int detailimage2=0x7f0a000d;
+        public static final int detailimage3=0x7f0a0010;
+        public static final int detailimage4=0x7f0a0013;
+        public static final int drawer_layout=0x7f0a0016;
+        public static final int fling=0x7f0a0000;
+        public static final int flipCameraAction=0x7f0a001b;
+        public static final int focusLayout=0x7f0a0001;
+        public static final int left_drawer=0x7f0a0018;
+        public static final int single_shot=0x7f0a001a;
+        public static final int toMain=0x7f0a0006;
+        public static final int weight=0x7f0a0004;
+        public static final int weight1=0x7f0a000b;
+        public static final int weight2=0x7f0a000e;
+        public static final int weight3=0x7f0a0011;
+        public static final int weight4=0x7f0a0014;
+        public static final int zoom=0x7f0a0008;
     }
     public static final class layout {
         public static final int activity_display=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_picture=0x7f030002;
-        public static final int drawer_list_item=0x7f030003;
-        public static final int fragment=0x7f030004;
-        public static final int fragment_charts=0x7f030005;
-        public static final int fragment_preferences=0x7f030006;
-        public static final int fragment_previous=0x7f030007;
-        public static final int fragment_progress=0x7f030008;
-        public static final int fragment_today=0x7f030009;
-        public static final int navdrawer=0x7f03000a;
+        public static final int activity_image=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_picture=0x7f030003;
+        public static final int drawer_list_item=0x7f030004;
+        public static final int fragment=0x7f030005;
+        public static final int fragment_charts=0x7f030006;
+        public static final int fragment_preferences=0x7f030007;
+        public static final int fragment_previous=0x7f030008;
+        public static final int fragment_progress=0x7f030009;
+        public static final int fragment_today=0x7f03000a;
+        public static final int navdrawer=0x7f03000b;
     }
     public static final class menu {
         public static final int camera=0x7f090000;
         public static final int camera_menu=0x7f090001;
         public static final int display=0x7f090002;
-        public static final int main=0x7f090003;
+        public static final int image=0x7f090003;
+        public static final int main=0x7f090004;
     }
     public static final class string {
         public static final int action_settings=0x7f070001;
@@ -92,6 +105,7 @@ public final class R {
         public static final int single_shot_mode=0x7f070006;
         public static final int take_picture=0x7f070004;
         public static final int title_activity_display=0x7f070007;
+        public static final int title_activity_image=0x7f07000b;
         public static final int weight=0x7f070008;
     }
     public static final class style {
