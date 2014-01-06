@@ -41,6 +41,14 @@
             android:name="com.hsi.progresspics.ImageFragment"
             android:label="@string/title_activity_image" >
         </activity>
+        <activity
+            android:name="com.hsi.progresspics.ImageActivity"
+            android:label="@string/title_activity_image_activty" >
+        </activity>
+        <activity
+            android:name="com.hsi.progresspics.NewImageActivity"
+            android:label="@string/title_activity_new_image_activiy" >
+        </activity>
     </application>
 
 </manifest>
