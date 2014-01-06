@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ImageActivity" >
+	<ViewFlipper
+	    android:id="@+id/view_flipper"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/linear1">
+
+</RelativeLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+
+android:id="@+id/linear2">
+<TextView 
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/testText1"
+
+android:text="LOLOL"/>
+</LinearLayout>
+      
+</ViewFlipper>
+<Button 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/slideshow"
+    android:layout_alignParentBottom="true"
+    android:text="slideshow"/>
+</LinearLayout>

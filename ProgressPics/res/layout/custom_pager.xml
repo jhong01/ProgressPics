@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="350dp"
+            android:layout_height="467dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+        <Button
+            android:id="@+id/slideshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slideshow"/>
+        <Button 
+            android:id="@+id/calendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"/>
+        
+</LinearLayout>

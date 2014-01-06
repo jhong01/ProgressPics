@@ -13,5 +13,7 @@
     <string name="comments">Comments: </string>
     <string name="on_upgrade_error">Upgrade Error </string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_image_activty">ImageActivty</string>
+    <string name="title_activity_new_image_activiy">NewImageActiviy</string>
 
 </resources>
