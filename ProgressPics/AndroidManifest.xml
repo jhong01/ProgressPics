@@ -49,6 +49,10 @@
             android:name="com.hsi.progresspics.NewImageActivity"
             android:label="@string/title_activity_new_image_activiy" >
         </activity>
+        <activity
+            android:name="com.hsi.progresspics.GifActivity"
+            android:label="GifActivity" >
+        </activity>
     </application>
 
 </manifest>

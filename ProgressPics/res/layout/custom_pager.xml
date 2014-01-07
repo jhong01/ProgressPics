@@ -11,6 +11,10 @@
             android:layout_height="467dp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/activity_vertical_margin" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/slideshow"
             android:layout_width="wrap_content"
@@ -21,5 +25,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calendar"/>
-        
+         <Button 
+            android:id="@+id/gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gif"/>
+         <Button 
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+        </LinearLayout>
 </LinearLayout>
