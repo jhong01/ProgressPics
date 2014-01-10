@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-
-</LinearLayout>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TableRow>
+<TextView
+style="@style/label"
+android:text="checkbox"/>
+<TextView
+android:id="@+id/checkbox"
+/>
+</TableRow>
+<TableRow>
+<TextView
+style="@style/label"
+android:text="ringtone"/>
+<TextView
+android:id="@+id/ringtone"
+/>
+</TableRow>
+<TableRow>
+<TextView
+style="@style/label"
+android:text="checkbox2"/>
+<TextView
+android:id="@+id/checkbox2"
+/>
+</TableRow>
+<TableRow>
+<TextView
+style="@style/label"
+android:text="text"/>
+<TextView
+android:id="@+id/text"
+/>
+</TableRow>
+<TableRow>
+<TextView
+style="@style/label"
+android:text="list"/>
+<TextView
+android:id="@+id/list"
+/>
+</TableRow>
+</TableLayout>

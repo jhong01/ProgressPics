@@ -2,9 +2,9 @@
 <resources>
     <string-array name="nav">
            <item>Today</item>
-          <item>Previous</item>
-          <item>Charts</item>
           <item>Progress</item>
+          <item>Charts</item>
+          <item>Gif Creator</item>
           <item>Preferences</item>
     </string-array>
      <string-array name="campick">
