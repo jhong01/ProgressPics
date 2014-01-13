@@ -63,6 +63,10 @@
             android:name="com.hsi.progresspics.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:label="graphicalactivity">
+        </activity>
     </application>
 
 </manifest>

@@ -11,4 +11,20 @@
         <item >Standard</item>
         <item >Front Facing Camera</item>
     </string-array>
+    <string-array name="unitpick">
+        <item >Standard</item>
+        <item >Metric</item>
+    </string-array>
+        <string-array name="unitpickvalues">
+        <item >lbs</item>
+        <item >kgs</item>
+    </string-array>
+    <string-array name="export">
+        <item >Export on SD</item>
+        <item >Export and Share</item>
+    </string-array>
+    <string-array name="exportvalues">
+        <item >1</item>
+        <item >2</item>
+    </string-array>
 </resources>

@@ -20,11 +20,15 @@ public final class R {
     }
     public static final class array {
         public static final int campick=0x7f090001;
+        public static final int export=0x7f090004;
+        public static final int exportvalues=0x7f090005;
         public static final int nav=0x7f090000;
-        public static final int pref_example_list_titles=0x7f090002;
-        public static final int pref_example_list_values=0x7f090003;
-        public static final int pref_sync_frequency_titles=0x7f090004;
-        public static final int pref_sync_frequency_values=0x7f090005;
+        public static final int pref_example_list_titles=0x7f090006;
+        public static final int pref_example_list_values=0x7f090007;
+        public static final int pref_sync_frequency_titles=0x7f090008;
+        public static final int pref_sync_frequency_values=0x7f090009;
+        public static final int unitpick=0x7f090002;
+        public static final int unitpickvalues=0x7f090003;
     }
     public static final class attr {
     }
@@ -223,8 +227,8 @@ public final class R {
         public static final int talkshit=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0041;
-        public static final int autofocus=0x7f0b003e;
+        public static final int action_settings=0x7f0b0043;
+        public static final int autofocus=0x7f0b0040;
         public static final int calendarButton=0x7f0b001a;
         public static final int calendar_gridview=0x7f0b001e;
         public static final int calendar_left_arrow=0x7f0b0014;
@@ -233,61 +237,63 @@ public final class R {
         public static final int calendar_title_view=0x7f0b0013;
         public static final int calendar_tv=0x7f0b001d;
         public static final int camera=0x7f0b0021;
-        public static final int cameraButton=0x7f0b0028;
-        public static final int card1=0x7f0b0029;
-        public static final int card2=0x7f0b002d;
-        public static final int card3=0x7f0b0031;
-        public static final int card4=0x7f0b0035;
-        public static final int checkbox=0x7f0b0023;
-        public static final int checkbox2=0x7f0b0025;
+        public static final int cameraButton=0x7f0b002a;
+        public static final int card1=0x7f0b002b;
+        public static final int card2=0x7f0b002f;
+        public static final int card3=0x7f0b0033;
+        public static final int card4=0x7f0b0037;
+        public static final int chart=0x7f0b0023;
+        public static final int checkbox=0x7f0b0025;
+        public static final int checkbox2=0x7f0b0027;
         public static final int comments=0x7f0b0011;
-        public static final int content_frame=0x7f0b003a;
+        public static final int content_frame=0x7f0b003c;
         public static final int date=0x7f0b000e;
-        public static final int date1=0x7f0b002c;
-        public static final int date2=0x7f0b0030;
-        public static final int date3=0x7f0b0034;
-        public static final int date4=0x7f0b0038;
+        public static final int date1=0x7f0b002e;
+        public static final int date2=0x7f0b0032;
+        public static final int date3=0x7f0b0036;
+        public static final int date4=0x7f0b003a;
         public static final int delete=0x7f0b001c;
         public static final int detailimage=0x7f0b000f;
-        public static final int detailimage1=0x7f0b002a;
-        public static final int detailimage2=0x7f0b002e;
-        public static final int detailimage3=0x7f0b0032;
-        public static final int detailimage4=0x7f0b0036;
-        public static final int drawer_layout=0x7f0b0039;
+        public static final int detailimage1=0x7f0b002c;
+        public static final int detailimage2=0x7f0b0030;
+        public static final int detailimage3=0x7f0b0034;
+        public static final int detailimage4=0x7f0b0038;
+        public static final int drawer_layout=0x7f0b003b;
         public static final int emptyText=0x7f0b001f;
         public static final int filename=0x7f0b0007;
-        public static final int flipCameraAction=0x7f0b0040;
+        public static final int flipCameraAction=0x7f0b0042;
         public static final int flipCardLayout=0x7f0b0000;
         public static final int flipText=0x7f0b0020;
         public static final int focusLayout=0x7f0b000d;
         public static final int gif=0x7f0b001b;
         public static final int imageInterval=0x7f0b0003;
         public static final int interval=0x7f0b0004;
+        public static final int layXzoom=0x7f0b0024;
         public static final int layout2=0x7f0b0001;
         public static final int layout3=0x7f0b0002;
-        public static final int left_drawer=0x7f0b003b;
+        public static final int left_drawer=0x7f0b003d;
         public static final int linear1=0x7f0b0009;
         public static final int linear2=0x7f0b000a;
-        public static final int list=0x7f0b0027;
+        public static final int list=0x7f0b0029;
         public static final int make=0x7f0b0005;
         public static final int months_infinite_pager=0x7f0b0018;
-        public static final int pictureLabel=0x7f0b003d;
+        public static final int pictureLabel=0x7f0b003f;
         public static final int progress=0x7f0b0006;
-        public static final int ringtone=0x7f0b0024;
-        public static final int singlePicture=0x7f0b003c;
-        public static final int single_shot=0x7f0b003f;
+        public static final int ringtone=0x7f0b0026;
+        public static final int singlePicture=0x7f0b003e;
+        public static final int single_shot=0x7f0b0041;
         public static final int slideshow=0x7f0b000c;
         public static final int testText1=0x7f0b000b;
-        public static final int text=0x7f0b0026;
+        public static final int text=0x7f0b0028;
         public static final int toMain=0x7f0b0012;
         public static final int view_flipper=0x7f0b0008;
         public static final int view_pager=0x7f0b0019;
         public static final int weekday_gridview=0x7f0b0017;
         public static final int weight=0x7f0b0010;
-        public static final int weight1=0x7f0b002b;
-        public static final int weight2=0x7f0b002f;
-        public static final int weight3=0x7f0b0033;
-        public static final int weight4=0x7f0b0037;
+        public static final int weight1=0x7f0b002d;
+        public static final int weight2=0x7f0b0031;
+        public static final int weight3=0x7f0b0035;
+        public static final int weight4=0x7f0b0039;
         public static final int zoom=0x7f0b0022;
     }
     public static final class integer {
@@ -418,9 +424,7 @@ public final class R {
     public static final class xml {
         public static final int pref_data_sync=0x7f050000;
         public static final int pref_general=0x7f050001;
-        public static final int pref_headers=0x7f050002;
-        public static final int pref_notification=0x7f050003;
-        public static final int preference_2=0x7f050004;
-        public static final int preference_headers=0x7f050005;
+        public static final int pref_screen=0x7f050002;
+        public static final int preference_headers=0x7f050003;
     }
 }
