@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<EditTextPreference
+android:key="username"
+android:summary="username"
+android:title="User Name"/>
+<ListPreference  
+android:dialogTitle="Pick Unit"
+android:entries="@array/unitpick"
+android:entryValues="@array/unitpickvalues"
+android:key="units"
+android:summary="Unit Picker"
+android:title="Unit Picker"/>
+<ListPreference  
+android:dialogTitle="Export"
+android:entries="@array/export"
+android:entryValues="@array/exportvalues"
+android:key="export1"
+android:summary="Export all images"
+android:title="Export"/>
+</PreferenceScreen>

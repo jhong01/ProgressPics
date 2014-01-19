@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+<header
+android:fragment="com.hsi.progresspics.SettingsActivity$Prefs1Fragment"
+android:summary="header1summary"
+android:title="Lock Screen">
+</header>
+<header
+android:fragment="com.hsi.progresspics.SettingsActivity$Prefs2Fragment"
+android:summary="header2summary"
+android:title="User Name">
+</header>
+<header
+android:fragment="com.hsi.progresspics.SettingsActivity$Prefs3Fragment"
+android:summary="header2summary"
+android:title="Units">
+</header>
+</preference-headers>

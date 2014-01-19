@@ -15,5 +15,8 @@
     <string name="title_activity_image">ImageActivity</string>
     <string name="title_activity_image_activty">ImageActivty</string>
     <string name="title_activity_new_image_activiy">NewImageActiviy</string>
+    <string name="title_activity_line_graph">LineGraphActivity</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
 
 </resources>

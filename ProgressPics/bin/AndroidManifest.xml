@@ -21,7 +21,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.Holo.Light" >
         <activity
             android:name="com.hsi.progresspics.MainActivity"
             android:label="@string/app_name" >
@@ -33,7 +33,12 @@
         </activity>
         <activity
             android:name="com.hsi.progresspics.PictureActivity"
-            android:label="@string/picture_activity" >
+            android:label="@string/picture_activity"
+              android:parentActivityName="com.hsi.progresspics.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hsi.progresspics.MainActivity" />
+             >
         </activity>
         <activity
             android:name="com.hsi.progresspics.DisplayActivity"
@@ -49,23 +54,37 @@
         </activity>
         <activity
             android:name="com.hsi.progresspics.NewImageActivity"
-            android:label="@string/title_activity_new_image_activiy" >
+            android:label="@string/title_activity_new_image_activiy" 
+              android:parentActivityName="com.hsi.progresspics.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hsi.progresspics.MainActivity" />
+            >
         </activity>
         <activity
             android:name="com.hsi.progresspics.GifActivity"
-            android:label="GifActivity" >
+            android:label="GifActivity" 
+              android:parentActivityName="com.hsi.progresspics.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hsi.progresspics.MainActivity" />
+            >
         </activity>
-
-
-      
-
         <activity
             android:name="com.hsi.progresspics.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
         <activity
             android:name="org.achartengine.GraphicalActivity"
-            android:label="graphicalactivity">
+            android:label="graphicalactivity" >
+        </activity>
+        <activity
+            android:name="com.hsi.progresspics.LineGraphActivity"
+            android:label="@string/title_activity_line_graph"
+            android:parentActivityName="com.hsi.progresspics.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hsi.progresspics.MainActivity" />
         </activity>
     </application>
 
