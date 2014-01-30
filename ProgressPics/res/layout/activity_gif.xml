@@ -2,48 +2,77 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:background="#e5e5e5"
+    
     android:orientation="vertical" >
-<LinearLayout 
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time between images"/>
-       <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageInterval"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:background="@drawable/card" android:padding="10dp" android:layout_gravity="center">
+        
+        
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="10dp" android:layout_gravity="center">
+                      <TextView android:id="@+id/filenameText" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Filename: "/>
+                
+                <EditText android:id="@+id/filename" android:layout_width="160dp" android:layout_height="wrap_content" android:text="myprogress"/>
+            
+        <TextView android:id="@+id/dotgifText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".gif"/>
     </LinearLayout>
-<SeekBar 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/interval"/>
-<Button
+    </LinearLayout> 
+<LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="30dp"
+    android:layout_marginTop="30dp"
+                  android:background="@drawable/card"
+    
+    >
+         <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal">
+  <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/timebetween"
+        android:layout_height="wrap_content"
+        android:text="Time between images:  "
+       
+    
+       />
+       <TextView
+           android:layout_toRightOf="@id/timebetween"
+         android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageInterval"
+   
+        
+        />
+       </LinearLayout>   
+       <SeekBar 
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/timebetween"
+    android:layout_marginTop="50dp"
+  android:layout_marginBottom="50dp"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp"
+  
+    android:id="@+id/interval"/>
+    </LinearLayout>
+
+<TextView
+    
+    android:padding="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:text="Make"
+                  android:background="@drawable/card"
+    
     android:id="@+id/make"/>
 <ProgressBar 
-     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    style="?android:attr/progressBarStyleHorizontal"
-    android:id="@+id/progress"
-    android:max="100"
-    />
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
- <TextView 
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="Filename: "/>
-<EditText
-    android:id="@+id/filename"	
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-</LinearLayout>
+    style="?android:attr/progressBarStyleHorizontal" android:id="@+id/progress" android:layout_width="300dp" android:layout_height="wrap_content" android:paddingTop="30dp" android:layout_gravity="center_horizontal" android:max="100"/>
+
 
 </LinearLayout>

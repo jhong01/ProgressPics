@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string-array name="nav_imgs">
+        <item>@drawable/ic_action_new_picture</item>
+        <item>@drawable/ic_action_slideshow</item>
+        <item>@drawable/ic_action_name</item>
+        <item>@drawable/ic_action_video</item>
+        <item>@drawable/ic_action_settings</item>
+    </string-array>
+<string-array name="quotes">
+    <item>it hurts now but one day it will be your WARMUP.</item>
+    <item>you can only fail if you quit.</item>
+    <item>make your body the sexiest outfit you own.</item>
+    <item>don\'t wish for it.  Work for it.</item>
+    <item>this month\'s choices are next month\'s body.</item>
+    <item>stop saying tomorrow.</item>
+        <item>complaining won\'t burn calories.</item>
+    
+    
+</string-array>
     <string-array name="nav">
-           <item>Today</item>
-          <item>Progress</item>
+           <item>Main</item>
+          <item>Gallery</item>
           <item>Charts</item>
           <item>Gif Creator</item>
           <item>Preferences</item>
@@ -12,12 +31,14 @@
         <item >Front Facing Camera</item>
     </string-array>
     <string-array name="unitpick">
-        <item >Standard</item>
-        <item >Metric</item>
+        <item >lbs</item>
+        <item >kgs</item>
+        <item>stone</item>
     </string-array>
         <string-array name="unitpickvalues">
         <item >lbs</item>
         <item >kgs</item>
+        <item>stone</item>
     </string-array>
     <string-array name="export">
         <item >Export on SD</item>

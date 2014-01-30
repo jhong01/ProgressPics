@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 android:orientation="vertical"
  >
  <LinearLayout
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
      android:background="@drawable/card"
      android:orientation="vertical"
      android:layout_gravity="center">
     
 <uk.co.senab.photoview.PhotoView
     android:id="@+id/singlePicture"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+     android:layout_width="300dp"
+        android:layout_height="400dp"
    />
-
+<TextView
+    android:paddingTop="10dp"
+    android:id="@+id/dateTextPager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:background="@drawable/border"
+	android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+    />
 <TextView
     android:id="@+id/weightTextPager"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+	
+        android:layout_gravity="center_horizontal"
     />
-<TextView
-    android:id="@+id/commentTextPager"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    />
+
 </LinearLayout>
 
 

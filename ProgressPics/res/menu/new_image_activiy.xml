@@ -5,5 +5,21 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
+      <item
+        android:id="@+id/action_delete"
+        android:showAsAction="never"
+        android:title="Delete"/>
+    <item 
+        android:id="@+id/calendarActionNI"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_calendar"/>
+     <item 
+        android:id="@+id/slideActionNI"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_slideshow_white"/>
+        <item 
+        android:id="@+id/gifActionNI"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_video_white"/>
 
 </menu>

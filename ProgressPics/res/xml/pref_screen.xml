@@ -3,20 +3,13 @@
 
 <EditTextPreference
 android:key="username"
-android:summary="username"
+android:summary="Change how the application will greet you."
 android:title="User Name"/>
 <ListPreference  
 android:dialogTitle="Pick Unit"
 android:entries="@array/unitpick"
 android:entryValues="@array/unitpickvalues"
 android:key="units"
-android:summary="Unit Picker"
-android:title="Unit Picker"/>
-<ListPreference  
-android:dialogTitle="Export"
-android:entries="@array/export"
-android:entryValues="@array/exportvalues"
-android:key="export1"
-android:summary="Export all images"
-android:title="Export"/>
+android:summary="Select which unit to record weight."
+android:title="Units"/>
 </PreferenceScreen>
