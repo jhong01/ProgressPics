@@ -34,6 +34,14 @@ public final class R {
         public static final int unitpickvalues=0x7f090006;
     }
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarButtonStyle=0x7f010005;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarStyle=0x7f010004;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -219,6 +227,7 @@ containing a value of this type.
         public static final int WhiteSmoke=0x7f07003a;
         public static final int Yellow=0x7f070017;
         public static final int YellowGreen=0x7f070064;
+        public static final int black_overlay=0x7f0700a1;
         public static final int caldroid_black=0x7f070002;
         public static final int caldroid_darker_gray=0x7f070006;
         public static final int caldroid_gray=0x7f070005;
@@ -286,154 +295,135 @@ containing a value of this type.
         public static final int ic_action_calendar=0x7f020017;
         public static final int ic_action_camera=0x7f020018;
         public static final int ic_action_fast_forward=0x7f020019;
-        public static final int ic_action_graph=0x7f02001a;
-        public static final int ic_action_name=0x7f02001b;
-        public static final int ic_action_new_picture=0x7f02001c;
-        public static final int ic_action_remove=0x7f02001d;
-        public static final int ic_action_save=0x7f02001e;
-        public static final int ic_action_settings=0x7f02001f;
-        public static final int ic_action_slideshow=0x7f020020;
-        public static final int ic_action_slideshow_white=0x7f020021;
-        public static final int ic_action_video=0x7f020022;
-        public static final int ic_action_video_white=0x7f020023;
-        public static final int ic_drawer=0x7f020024;
-        public static final int ic_launcher=0x7f020025;
-        public static final int ic_menu_av_stop=0x7f020026;
-        public static final int ic_navigation_drawer=0x7f020027;
-        public static final int left_arrow=0x7f020028;
-        public static final int list_focused_progresspics=0x7f020029;
-        public static final int list_pressed_progresspics=0x7f02002a;
-        public static final int menu_dropdown_panel_progresspics=0x7f02002b;
-        public static final int progress_bg_progresspics=0x7f02002c;
-        public static final int progress_horizontal_progresspics=0x7f02002d;
-        public static final int progress_primary_progresspics=0x7f02002e;
-        public static final int progress_secondary_progresspics=0x7f02002f;
-        public static final int red_border=0x7f020030;
-        public static final int red_border_gray_bg=0x7f020031;
-        public static final int right_arrow=0x7f020032;
-        public static final int selectable_background_progresspics=0x7f020033;
-        public static final int spinner_ab_default_progresspics=0x7f020034;
-        public static final int spinner_ab_disabled_progresspics=0x7f020035;
-        public static final int spinner_ab_focused_progresspics=0x7f020036;
-        public static final int spinner_ab_pressed_progresspics=0x7f020037;
-        public static final int spinner_background_ab_progresspics=0x7f020038;
-        public static final int tab_indicator_ab_progresspics=0x7f020039;
-        public static final int tab_selected_focused_progresspics=0x7f02003a;
-        public static final int tab_selected_pressed_progresspics=0x7f02003b;
-        public static final int tab_selected_progresspics=0x7f02003c;
-        public static final int tab_unselected_focused_progresspics=0x7f02003d;
-        public static final int tab_unselected_pressed_progresspics=0x7f02003e;
-        public static final int tab_unselected_progresspics=0x7f02003f;
-        public static final int talkshit=0x7f020040;
+        public static final int ic_action_full_screen=0x7f02001a;
+        public static final int ic_action_graph=0x7f02001b;
+        public static final int ic_action_name=0x7f02001c;
+        public static final int ic_action_new_picture=0x7f02001d;
+        public static final int ic_action_remove=0x7f02001e;
+        public static final int ic_action_return_from_full_screen=0x7f02001f;
+        public static final int ic_action_save=0x7f020020;
+        public static final int ic_action_settings=0x7f020021;
+        public static final int ic_action_slideshow=0x7f020022;
+        public static final int ic_action_slideshow_white=0x7f020023;
+        public static final int ic_action_video=0x7f020024;
+        public static final int ic_action_video_white=0x7f020025;
+        public static final int ic_drawer=0x7f020026;
+        public static final int ic_launcher=0x7f020027;
+        public static final int ic_menu_av_stop=0x7f020028;
+        public static final int ic_navigation_drawer=0x7f020029;
+        public static final int left_arrow=0x7f02002a;
+        public static final int list_focused_progresspics=0x7f02002b;
+        public static final int list_pressed_progresspics=0x7f02002c;
+        public static final int menu_dropdown_panel_progresspics=0x7f02002d;
+        public static final int progress_bg_progresspics=0x7f02002e;
+        public static final int progress_horizontal_progresspics=0x7f02002f;
+        public static final int progress_primary_progresspics=0x7f020030;
+        public static final int progress_secondary_progresspics=0x7f020031;
+        public static final int red_border=0x7f020032;
+        public static final int red_border_gray_bg=0x7f020033;
+        public static final int right_arrow=0x7f020034;
+        public static final int selectable_background_progresspics=0x7f020035;
+        public static final int selector=0x7f020036;
+        public static final int spinner_ab_default_progresspics=0x7f020037;
+        public static final int spinner_ab_disabled_progresspics=0x7f020038;
+        public static final int spinner_ab_focused_progresspics=0x7f020039;
+        public static final int spinner_ab_pressed_progresspics=0x7f02003a;
+        public static final int spinner_background_ab_progresspics=0x7f02003b;
+        public static final int tab_indicator_ab_progresspics=0x7f02003c;
+        public static final int tab_selected_focused_progresspics=0x7f02003d;
+        public static final int tab_selected_pressed_progresspics=0x7f02003e;
+        public static final int tab_selected_progresspics=0x7f02003f;
+        public static final int tab_unselected_focused_progresspics=0x7f020040;
+        public static final int tab_unselected_pressed_progresspics=0x7f020041;
+        public static final int tab_unselected_progresspics=0x7f020042;
+        public static final int talkshit=0x7f020043;
     }
     public static final class id {
         public static final int accordion=0x7f06000b;
-        public static final int action_delete=0x7f060069;
-        public static final int action_settings=0x7f060067;
-        public static final int arrow=0x7f06003f;
-        public static final int autofocus=0x7f060064;
-        public static final int calendarAction=0x7f060068;
-        public static final int calendarActionNI=0x7f06006a;
-        public static final int calendar_gridview=0x7f060030;
-        public static final int calendar_left_arrow=0x7f060025;
-        public static final int calendar_month_year_textview=0x7f060026;
-        public static final int calendar_right_arrow=0x7f060027;
-        public static final int calendar_title_view=0x7f060024;
-        public static final int calendar_tv=0x7f06002f;
-        public static final int camera=0x7f060035;
-        public static final int cameraButton=0x7f06003d;
-        public static final int cameraDarkButton=0x7f06003e;
-        public static final int card1=0x7f060041;
-        public static final int card2=0x7f060045;
-        public static final int card3=0x7f060049;
-        public static final int card4=0x7f06004d;
-        public static final int chart=0x7f06001d;
-        public static final int checkbox=0x7f060038;
-        public static final int checkbox2=0x7f06003a;
-        public static final int commentLayout=0x7f06002c;
-        public static final int commentTextPager=0x7f06002e;
-        public static final int comments=0x7f060022;
-        public static final int content_frame=0x7f060052;
+        public static final int action_delete=0x7f060053;
+        public static final int action_settings=0x7f060051;
+        public static final int arrow=0x7f060033;
+        public static final int autofocus=0x7f06004e;
+        public static final int calendarAction=0x7f060052;
+        public static final int calendarActionNI=0x7f060054;
+        public static final int calendar_gridview=0x7f06002e;
+        public static final int calendar_left_arrow=0x7f060023;
+        public static final int calendar_month_year_textview=0x7f060024;
+        public static final int calendar_right_arrow=0x7f060025;
+        public static final int calendar_title_view=0x7f060022;
+        public static final int calendar_tv=0x7f06002d;
+        public static final int camera=0x7f06004d;
+        public static final int cameraButton=0x7f060031;
+        public static final int cameraDarkButton=0x7f060032;
+        public static final int card1=0x7f060035;
+        public static final int chart=0x7f06001b;
+        public static final int collapse=0x7f060012;
+        public static final int commentLayout=0x7f06002a;
+        public static final int commentTextPager=0x7f06002c;
+        public static final int comments=0x7f060020;
+        public static final int content_frame=0x7f06003a;
         public static final int cubein=0x7f060002;
         public static final int cubeout=0x7f060003;
-        public static final int date=0x7f06001f;
-        public static final int date1=0x7f060043;
-        public static final int date2=0x7f060048;
-        public static final int date3=0x7f06004c;
-        public static final int date4=0x7f060050;
-        public static final int dateTextPager=0x7f060055;
-        public static final int detailimage=0x7f060020;
-        public static final int detailimage1=0x7f060042;
-        public static final int detailimage2=0x7f060046;
-        public static final int detailimage3=0x7f06004a;
-        public static final int detailimage4=0x7f06004e;
-        public static final int dotgifText=0x7f060012;
-        public static final int drawer_layout=0x7f060051;
-        public static final int emptyText=0x7f060033;
-        public static final int filename=0x7f060011;
-        public static final int filenameText=0x7f060010;
-        public static final int firstLoad=0x7f060040;
-        public static final int firstLoadNI=0x7f06002b;
-        public static final int flipCameraAction=0x7f060066;
+        public static final int date=0x7f06001d;
+        public static final int date1=0x7f060037;
+        public static final int dateTextPager=0x7f06003e;
+        public static final int detailimage=0x7f06001e;
+        public static final int detailimage1=0x7f060036;
+        public static final int dotgifText=0x7f060015;
+        public static final int drawer_layout=0x7f060039;
+        public static final int expand=0x7f06003d;
+        public static final int filename=0x7f060014;
+        public static final int filenameText=0x7f060013;
+        public static final int firstLoad=0x7f060034;
+        public static final int firstLoadNI=0x7f060029;
+        public static final int flipCameraAction=0x7f060050;
         public static final int flipCardLayout=0x7f06000d;
-        public static final int flipText=0x7f060034;
         public static final int fliphorizontal=0x7f060005;
         public static final int flipvertical=0x7f060004;
-        public static final int focusLayout=0x7f06001e;
-        public static final int gifActionNI=0x7f06006c;
-        public static final int icon=0x7f060031;
-        public static final int imageInterval=0x7f060014;
-        public static final int interval=0x7f060015;
+        public static final int focusLayout=0x7f06001c;
+        public static final int fullLayout=0x7f060010;
+        public static final int fullPicture=0x7f060011;
+        public static final int gifActionNI=0x7f060056;
+        public static final int icon=0x7f06002f;
+        public static final int imageInterval=0x7f060017;
+        public static final int interval=0x7f060018;
         public static final int jazzy_key=0x7f06000c;
-        public static final int layXzoom=0x7f060037;
         public static final int layout2=0x7f06000e;
         public static final int layout3=0x7f06000f;
-        public static final int left_drawer=0x7f060053;
-        public static final int linear1=0x7f060019;
-        public static final int linear2=0x7f06001a;
-        public static final int list=0x7f06003c;
-        public static final int make=0x7f060016;
-        public static final int menu_accordian=0x7f060063;
-        public static final int menu_cube_in=0x7f06005a;
-        public static final int menu_cube_out=0x7f06005b;
-        public static final int menu_flip_horizontal=0x7f06005d;
-        public static final int menu_flip_vertical=0x7f06005c;
-        public static final int menu_rotate_down=0x7f060062;
-        public static final int menu_rotate_up=0x7f060061;
-        public static final int menu_stack=0x7f06005e;
-        public static final int menu_standard=0x7f060058;
-        public static final int menu_tablet=0x7f060059;
-        public static final int menu_zoom_in=0x7f06005f;
-        public static final int menu_zoom_out=0x7f060060;
-        public static final int months_infinite_pager=0x7f060029;
-        public static final int noteTypeface=0x7f06002d;
-        public static final int progress=0x7f060017;
-        public static final int ringtone=0x7f060039;
+        public static final int left_drawer=0x7f06003b;
+        public static final int make=0x7f060019;
+        public static final int menu_accordian=0x7f06004c;
+        public static final int menu_cube_in=0x7f060043;
+        public static final int menu_cube_out=0x7f060044;
+        public static final int menu_flip_horizontal=0x7f060046;
+        public static final int menu_flip_vertical=0x7f060045;
+        public static final int menu_rotate_down=0x7f06004b;
+        public static final int menu_rotate_up=0x7f06004a;
+        public static final int menu_stack=0x7f060047;
+        public static final int menu_standard=0x7f060041;
+        public static final int menu_tablet=0x7f060042;
+        public static final int menu_zoom_in=0x7f060048;
+        public static final int menu_zoom_out=0x7f060049;
+        public static final int months_infinite_pager=0x7f060027;
+        public static final int noteTypeface=0x7f06002b;
+        public static final int progress=0x7f06001a;
         public static final int rotatedown=0x7f06000a;
         public static final int rotateup=0x7f060009;
-        public static final int singlePicture=0x7f060054;
-        public static final int single_shot=0x7f060065;
-        public static final int slideActionNI=0x7f06006b;
-        public static final int slideshow=0x7f06001c;
+        public static final int singlePicture=0x7f06003c;
+        public static final int single_shot=0x7f06004f;
+        public static final int slideActionNI=0x7f060055;
         public static final int stack=0x7f060006;
         public static final int standard=0x7f060000;
         public static final int tablet=0x7f060001;
-        public static final int testText1=0x7f06001b;
-        public static final int text=0x7f06003b;
-        public static final int timebetween=0x7f060013;
-        public static final int title=0x7f060032;
-        public static final int toMain=0x7f060023;
-        public static final int userNameNav=0x7f060057;
-        public static final int view_flipper=0x7f060018;
-        public static final int view_pager=0x7f06002a;
-        public static final int weekday_gridview=0x7f060028;
-        public static final int weight=0x7f060021;
-        public static final int weight1=0x7f060044;
-        public static final int weight2=0x7f060047;
-        public static final int weight3=0x7f06004b;
-        public static final int weight4=0x7f06004f;
-        public static final int weightTextPager=0x7f060056;
-        public static final int zoom=0x7f060036;
+        public static final int timebetween=0x7f060016;
+        public static final int title=0x7f060030;
+        public static final int toMain=0x7f060021;
+        public static final int userNameNav=0x7f060040;
+        public static final int view_pager=0x7f060028;
+        public static final int weekday_gridview=0x7f060026;
+        public static final int weight=0x7f06001f;
+        public static final int weight1=0x7f060038;
+        public static final int weightTextPager=0x7f06003f;
         public static final int zoomin=0x7f060007;
         public static final int zoomout=0x7f060008;
     }
@@ -442,87 +432,91 @@ containing a value of this type.
         public static final int card_flip_time_half=0x7f0c0001;
     }
     public static final class layout {
-        public static final int activity_display=0x7f030000;
+        public static final int activity_full_size=0x7f030000;
         public static final int activity_gif=0x7f030001;
-        public static final int activity_image_activty=0x7f030002;
-        public static final int activity_line_graph=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_new_image_activiy=0x7f030005;
-        public static final int activity_picture=0x7f030006;
-        public static final int calendar_view=0x7f030007;
-        public static final int custom_pager=0x7f030008;
-        public static final int date_cell=0x7f030009;
-        public static final int date_grid_fragment=0x7f03000a;
-        public static final int drawer_list_item=0x7f03000b;
-        public static final int empty_text=0x7f03000c;
-        public static final int flip_text=0x7f03000d;
-        public static final int fragment=0x7f03000e;
-        public static final int fragment_charts=0x7f03000f;
-        public static final int fragment_preferences=0x7f030010;
-        public static final int fragment_previous=0x7f030011;
-        public static final int fragment_progress=0x7f030012;
-        public static final int fragment_today=0x7f030013;
-        public static final int navdrawer=0x7f030014;
-        public static final int singlepicture=0x7f030015;
-        public static final int user_panel=0x7f030016;
+        public static final int activity_line_graph=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_picture=0x7f030004;
+        public static final int calendar_view=0x7f030005;
+        public static final int custom_pager=0x7f030006;
+        public static final int date_cell=0x7f030007;
+        public static final int date_grid_fragment=0x7f030008;
+        public static final int drawer_list_item=0x7f030009;
+        public static final int fragment_today=0x7f03000a;
+        public static final int navdrawer=0x7f03000b;
+        public static final int singlepicture=0x7f03000c;
+        public static final int user_panel=0x7f03000d;
     }
     public static final class menu {
         public static final int activity_main=0x7f0d0000;
         public static final int camera=0x7f0d0001;
         public static final int camera_menu=0x7f0d0002;
         public static final int display=0x7f0d0003;
-        public static final int image=0x7f0d0004;
-        public static final int image_activty=0x7f0d0005;
-        public static final int line_graph=0x7f0d0006;
-        public static final int main=0x7f0d0007;
-        public static final int new_image_activiy=0x7f0d0008;
+        public static final int full_size=0x7f0d0004;
+        public static final int image=0x7f0d0005;
+        public static final int image_activty=0x7f0d0006;
+        public static final int line_graph=0x7f0d0007;
+        public static final int main=0x7f0d0008;
+        public static final int new_image_activiy=0x7f0d0009;
     }
     public static final class string {
         public static final int action_settings=0x7f080001;
         public static final int app_name=0x7f080000;
         public static final int auto_focus=0x7f080005;
         public static final int comments=0x7f080009;
+        public static final int dotgif=0x7f080015;
         public static final int drawer_close=0x7f080010;
         public static final int drawer_open=0x7f08000f;
+        public static final int dummy_button=0x7f080013;
+        public static final int dummy_content=0x7f080014;
+        public static final int filename=0x7f080017;
         public static final int hello_world=0x7f080002;
+        public static final int make=0x7f080019;
+        public static final int myprogress=0x7f080016;
+        public static final int nopics=0x7f08001a;
+        public static final int notes=0x7f08001b;
         public static final int on_upgrade_error=0x7f08000a;
         public static final int picture_activity=0x7f080003;
-        public static final int pref_default_display_name=0x7f080016;
-        public static final int pref_description_social_recommendations=0x7f080014;
+        public static final int pref_default_display_name=0x7f080022;
+        public static final int pref_description_social_recommendations=0x7f080020;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f080018;
+        public static final int pref_header_data_sync=0x7f080024;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f080012;
+        public static final int pref_header_general=0x7f08001e;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f08001b;
-        public static final int pref_ringtone_silent=0x7f08001e;
-        public static final int pref_title_add_friends_to_messages=0x7f080017;
-        public static final int pref_title_display_name=0x7f080015;
-        public static final int pref_title_new_message_notifications=0x7f08001c;
-        public static final int pref_title_ringtone=0x7f08001d;
-        public static final int pref_title_social_recommendations=0x7f080013;
-        public static final int pref_title_sync_frequency=0x7f080019;
-        public static final int pref_title_system_sync_settings=0x7f08001a;
-        public static final int pref_title_vibrate=0x7f08001f;
+        public static final int pref_header_notifications=0x7f080027;
+        public static final int pref_ringtone_silent=0x7f08002a;
+        public static final int pref_title_add_friends_to_messages=0x7f080023;
+        public static final int pref_title_display_name=0x7f080021;
+        public static final int pref_title_new_message_notifications=0x7f080028;
+        public static final int pref_title_ringtone=0x7f080029;
+        public static final int pref_title_social_recommendations=0x7f08001f;
+        public static final int pref_title_sync_frequency=0x7f080025;
+        public static final int pref_title_system_sync_settings=0x7f080026;
+        public static final int pref_title_vibrate=0x7f08002b;
         public static final int single_shot_mode=0x7f080006;
         public static final int take_picture=0x7f080004;
+        public static final int timebetween=0x7f080018;
         public static final int title_activity_display=0x7f080007;
+        public static final int title_activity_full_size=0x7f080011;
+        public static final int title_activity_fullscreen=0x7f080012;
         public static final int title_activity_image=0x7f08000b;
         public static final int title_activity_image_activty=0x7f08000c;
         public static final int title_activity_line_graph=0x7f08000e;
         public static final int title_activity_new_image_activiy=0x7f08000d;
-        public static final int title_activity_settings=0x7f080011;
+        public static final int title_activity_settings=0x7f08001d;
         public static final int weight=0x7f080008;
+        public static final int welcome=0x7f08001c;
     }
     public static final class style {
-        public static final int ActionBar_Solid_Progresspics=0x7f0a0004;
-        public static final int ActionBar_Transparent_Progresspics=0x7f0a0005;
-        public static final int ActionBarTabStyle_Progresspics=0x7f0a0008;
-        public static final int ActionButton_CloseMode_Progresspics=0x7f0a000b;
+        public static final int ActionBar_Solid_Progresspics=0x7f0a0008;
+        public static final int ActionBar_Transparent_Progresspics=0x7f0a0009;
+        public static final int ActionBarTabStyle_Progresspics=0x7f0a000c;
+        public static final int ActionButton_CloseMode_Progresspics=0x7f0a000f;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -565,15 +559,18 @@ containing a value of this type.
 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
+
     
  API 11 theme customizations can go here. 
 
@@ -592,16 +589,20 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0a0001;
-        public static final int DropDownListView_Progresspics=0x7f0a0007;
-        public static final int DropDownNav_Progresspics=0x7f0a0009;
-        public static final int PopupMenu_Progresspics=0x7f0a0006;
-        public static final int ProgressBar_Progresspics=0x7f0a000a;
+        public static final int ButtonBar=0x7f0a0004;
+        public static final int ButtonBarButton=0x7f0a0005;
+        public static final int DropDownListView_Progresspics=0x7f0a000b;
+        public static final int DropDownNav_Progresspics=0x7f0a000d;
+        public static final int FullscreenActionBarStyle=0x7f0a0006;
+        public static final int FullscreenTheme=0x7f0a0003;
+        public static final int PopupMenu_Progresspics=0x7f0a000a;
+        public static final int ProgressBar_Progresspics=0x7f0a000e;
         /**  Light.DarkActionBar specific 
          */
-        public static final int Theme_Progresspics=0x7f0a0003;
+        public static final int Theme_Progresspics=0x7f0a0007;
         /**  this style is only referenced in a Light.DarkActionBar based theme 
          */
-        public static final int Theme_Progresspics_Widget=0x7f0a000c;
+        public static final int Theme_Progresspics_Widget=0x7f0a0010;
         public static final int label=0x7f0a0002;
     }
     public static final class xml {
@@ -611,6 +612,46 @@ containing a value of this type.
         public static final int preference_headers=0x7f050003;
     }
     public static final class styleable {
+        /** 
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarButtonStyle com.hsi.progresspics:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarStyle com.hsi.progresspics:buttonBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #ButtonBarContainerTheme_buttonBarButtonStyle
+           @see #ButtonBarContainerTheme_buttonBarStyle
+         */
+        public static final int[] ButtonBarContainerTheme = {
+            0x7f010004, 0x7f010005
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.hsi.progresspics.R.attr#buttonBarButtonStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.hsi.progresspics:buttonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_buttonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.hsi.progresspics.R.attr#buttonBarStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.hsi.progresspics:buttonBarStyle
+        */
+        public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
         /** Attributes that can be used with a JazzyViewPager.
            <p>Includes the following attributes:</p>
            <table>

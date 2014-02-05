@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+        android:background="#e5e5e5"
+        
+        >
+        
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/focusLayout">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"/>
+     
+    <LinearLayout
+       
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_gravity="center"
+    android:background="@drawable/card"
+    >
+        
+    <ImageView
+        android:id="@+id/detailimage"
+        android:layout_width="400dp"
+        android:layout_height="533dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/weight"
+       />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/comments" 
+        android:inputType="textMultiLine"/>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/toMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" 
+        android:src="@drawable/ic_action_save"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

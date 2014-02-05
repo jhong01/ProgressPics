@@ -18,5 +18,16 @@
     <string name="title_activity_line_graph">LineGraphActivity</string>
     <string name="drawer_open">Drawer Open</string>
     <string name="drawer_close">Drawer Close</string>
-
+    <string name="title_activity_full_size">FullSizeActivity</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dotgif">.gif</string>
+    <string name="myprogress">myprogress</string>
+<string name="filename">Filename: </string>
+    <string name="timebetween">Time between images:  </string>
+    <string name="make">Make </string>
+    <string name="nopics">No pictures found.</string>
+    <string name="notes">Notes: </string>    
+    <string name="welcome">Welcome to the Progress Pics app!  Add a picture to get started.</string>                    
 </resources>

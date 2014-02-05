@@ -20,7 +20,7 @@ public final class R {
 		public static final int holo_blue = 0x7f070000;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f020025;
+		public static final int ic_launcher = 0x7f020027;
 	}
 	public static final class id {
 		public static final int accordion = 0x7f06000b;
@@ -29,18 +29,18 @@ public final class R {
 		public static final int fliphorizontal = 0x7f060005;
 		public static final int flipvertical = 0x7f060004;
 		public static final int jazzy_key = 0x7f06000c;
-		public static final int menu_accordian = 0x7f060063;
-		public static final int menu_cube_in = 0x7f06005a;
-		public static final int menu_cube_out = 0x7f06005b;
-		public static final int menu_flip_horizontal = 0x7f06005d;
-		public static final int menu_flip_vertical = 0x7f06005c;
-		public static final int menu_rotate_down = 0x7f060062;
-		public static final int menu_rotate_up = 0x7f060061;
-		public static final int menu_stack = 0x7f06005e;
-		public static final int menu_standard = 0x7f060058;
-		public static final int menu_tablet = 0x7f060059;
-		public static final int menu_zoom_in = 0x7f06005f;
-		public static final int menu_zoom_out = 0x7f060060;
+		public static final int menu_accordian = 0x7f06004c;
+		public static final int menu_cube_in = 0x7f060043;
+		public static final int menu_cube_out = 0x7f060044;
+		public static final int menu_flip_horizontal = 0x7f060046;
+		public static final int menu_flip_vertical = 0x7f060045;
+		public static final int menu_rotate_down = 0x7f06004b;
+		public static final int menu_rotate_up = 0x7f06004a;
+		public static final int menu_stack = 0x7f060047;
+		public static final int menu_standard = 0x7f060041;
+		public static final int menu_tablet = 0x7f060042;
+		public static final int menu_zoom_in = 0x7f060048;
+		public static final int menu_zoom_out = 0x7f060049;
 		public static final int rotatedown = 0x7f06000a;
 		public static final int rotateup = 0x7f060009;
 		public static final int stack = 0x7f060006;
@@ -50,7 +50,7 @@ public final class R {
 		public static final int zoomout = 0x7f060008;
 	}
 	public static final class layout {
-		public static final int activity_main = 0x7f030004;
+		public static final int activity_main = 0x7f030003;
 	}
 	public static final class menu {
 		public static final int activity_main = 0x7f0d0000;

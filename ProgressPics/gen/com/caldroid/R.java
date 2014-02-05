@@ -23,26 +23,26 @@ public final class R {
 		public static final int calendar_prev_arrow = 0x7f02000f;
 		public static final int cell_bg = 0x7f020011;
 		public static final int disable_cell = 0x7f020014;
-		public static final int ic_launcher = 0x7f020025;
-		public static final int left_arrow = 0x7f020028;
-		public static final int red_border = 0x7f020030;
-		public static final int red_border_gray_bg = 0x7f020031;
-		public static final int right_arrow = 0x7f020032;
+		public static final int ic_launcher = 0x7f020027;
+		public static final int left_arrow = 0x7f02002a;
+		public static final int red_border = 0x7f020032;
+		public static final int red_border_gray_bg = 0x7f020033;
+		public static final int right_arrow = 0x7f020034;
 	}
 	public static final class id {
-		public static final int calendar_gridview = 0x7f060030;
-		public static final int calendar_left_arrow = 0x7f060025;
-		public static final int calendar_month_year_textview = 0x7f060026;
-		public static final int calendar_right_arrow = 0x7f060027;
-		public static final int calendar_title_view = 0x7f060024;
-		public static final int calendar_tv = 0x7f06002f;
-		public static final int months_infinite_pager = 0x7f060029;
-		public static final int weekday_gridview = 0x7f060028;
+		public static final int calendar_gridview = 0x7f06002e;
+		public static final int calendar_left_arrow = 0x7f060023;
+		public static final int calendar_month_year_textview = 0x7f060024;
+		public static final int calendar_right_arrow = 0x7f060025;
+		public static final int calendar_title_view = 0x7f060022;
+		public static final int calendar_tv = 0x7f06002d;
+		public static final int months_infinite_pager = 0x7f060027;
+		public static final int weekday_gridview = 0x7f060026;
 	}
 	public static final class layout {
-		public static final int calendar_view = 0x7f030007;
-		public static final int date_cell = 0x7f030009;
-		public static final int date_grid_fragment = 0x7f03000a;
+		public static final int calendar_view = 0x7f030005;
+		public static final int date_cell = 0x7f030007;
+		public static final int date_grid_fragment = 0x7f030008;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f080000;

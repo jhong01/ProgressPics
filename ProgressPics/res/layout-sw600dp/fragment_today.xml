@@ -54,13 +54,12 @@
     android:layout_gravity="center"
     android:background="@drawable/card"
     android:id="@+id/card1"
-    android:clickable = "true"
     >
         
   
     <ImageView
-       android:layout_width="300dp"
-        android:layout_height="400dp"
+       android:layout_width="520dp"
+        android:layout_height="693dp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
         android:id="@+id/detailimage1"
@@ -79,11 +78,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
   android:layout_gravity="center"
-  android:paddingBottom="20dp"
+    android:paddingBottom="20dp"
+  
             />
-</LinearLayout>
+
    
         </LinearLayout>
 	
+    </LinearLayout>
 </ScrollView>
 </LinearLayout>
