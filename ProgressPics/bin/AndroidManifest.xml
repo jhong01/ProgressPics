@@ -8,14 +8,11 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature android:name="android.hardware.camera" />
-
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +22,7 @@
         android:theme="@style/Theme.Progresspics" >
         <activity
             android:name="com.hsi.progresspics.MainActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,62 +33,34 @@
         <activity
             android:name="com.hsi.progresspics.PictureActivity"
             android:label="@string/picture_activity"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.hsi.progresspics.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.hsi.progresspics.MainActivity" />
              >
         </activity>
-        <activity
-            android:name="com.hsi.progresspics.DisplayActivity"
-            android:label="@string/title_activity_display" >
-        </activity>
-        <activity
-            android:name="com.hsi.progresspics.ImageFragment"
-            android:label="@string/title_activity_image" >
-        </activity>
-        <activity
-            android:name="com.hsi.progresspics.ImageActivity"
-            android:label="@string/title_activity_image_activty" >
-        </activity>
+       
+       
+
         <activity
             android:name="com.hsi.progresspics.NewImageActivity"
             android:label="@string/title_activity_new_image_activiy"
-            android:parentActivityName="com.hsi.progresspics.MainActivity" >
+            android:parentActivityName="com.hsi.progresspics.MainActivity" 
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.hsi.progresspics.MainActivity" />
             >
         </activity>
-        <activity
-            android:name="com.hsi.progresspics.GifActivity"
-            android:label="GifActivity"
-            android:parentActivityName="com.hsi.progresspics.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hsi.progresspics.MainActivity" />
-            >
-        </activity>
-        <activity
-            android:name="com.hsi.progresspics.SettingsActivity"
-            android:label="@string/title_activity_settings" >
-        </activity>
-        <activity
-            android:name="org.achartengine.GraphicalActivity"
-            android:label="graphicalactivity" >
-        </activity>
-        <activity
-            android:name="com.hsi.progresspics.LineGraphActivity"
-            android:label="@string/title_activity_line_graph"
-            android:parentActivityName="com.hsi.progresspics.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hsi.progresspics.MainActivity" />
-        </activity>
+        
+
+  
         <activity
             android:name="com.hsi.progresspics.FullSizeActivity"
             android:label="@string/title_activity_full_size"
             android:parentActivityName="com.hsi.progresspics.NewImageActivity" 
+            android:screenOrientation="portrait"
            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
