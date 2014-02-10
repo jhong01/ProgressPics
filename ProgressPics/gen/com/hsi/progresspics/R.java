@@ -383,7 +383,6 @@ containing a value of this type.
         public static final int focusLayout=0x7f06001c;
         public static final int fullLayout=0x7f060010;
         public static final int fullPicture=0x7f060011;
-        public static final int gifActionNI=0x7f060056;
         public static final int icon=0x7f06002f;
         public static final int imageInterval=0x7f060017;
         public static final int interval=0x7f060018;

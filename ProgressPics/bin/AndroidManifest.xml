@@ -44,7 +44,7 @@
        
 
         <activity
-            android:name="com.hsi.progresspics.NewImageActivity"
+            android:name="com.hsi.progresspics.GalleryActivity"
             android:label="@string/title_activity_new_image_activiy"
             android:parentActivityName="com.hsi.progresspics.MainActivity" 
             android:screenOrientation="portrait">
@@ -59,7 +59,7 @@
         <activity
             android:name="com.hsi.progresspics.FullSizeActivity"
             android:label="@string/title_activity_full_size"
-            android:parentActivityName="com.hsi.progresspics.NewImageActivity" 
+            android:parentActivityName="com.hsi.progresspics.GalleryActivity" 
             android:screenOrientation="portrait"
            >
             <meta-data

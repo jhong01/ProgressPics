@@ -301,7 +301,6 @@ int id flipvertical 0x7f060004
 int id focusLayout 0x7f06001c
 int id fullLayout 0x7f060010
 int id fullPicture 0x7f060011
-int id gifActionNI 0x7f060056
 int id icon 0x7f06002f
 int id imageInterval 0x7f060017
 int id interval 0x7f060018
